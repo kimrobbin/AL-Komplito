@@ -23,11 +23,12 @@ body{
 
 
 
-#Anbefalinger_av_oss{
+#Anbefalinger_av_oss, h2{
     display: flex;
     justify-content: center;
     padding: 5vh;
-    font-size: 10ch;
+    font-size: 6vh;
+    margin-bottom: 8vh;
     
 }
 
@@ -36,6 +37,18 @@ body{
     justify-content: center;
     height: 40vh;
     gap: 10vh;
+    margin-bottom: 10vh;
 }
 
 
+
+
+
+
+.Ukas_Produkt{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    gap: 8vh;
+    margin-top: 15vh;
+}
