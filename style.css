@@ -17,3 +17,19 @@ body{
     height: 50vh;
     padding-top: 5vh;
 }
+
+#Anbefalinger_av_oss{
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+    
+}
+
+.anbefalt_oss{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    gap: 10vh;
+}
+
+
