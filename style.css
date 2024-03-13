@@ -1,8 +1,8 @@
 .Header{
     display: flex;
-    background-color: #2C4954;
+    background-color: #90A3A9;
     justify-content: center;
-    padding: 2vh;
+    height: 10vh;
     
 }
 
@@ -21,6 +21,7 @@ body{
     padding-top: 5vh;
 }
 
+/* _______________________ detter er for å dele opp koden inn i deler */
 
 
 #Anbefalinger_av_oss, h2{
@@ -41,7 +42,7 @@ body{
 }
 
 
-
+/* _______________________ detter er for å dele opp koden inn i deler */
 
 
 
@@ -51,4 +52,16 @@ body{
     height: 40vh;
     gap: 8vh;
     margin-top: 15vh;
+}
+
+
+/* _______________________ detter er for å dele opp koden inn i deler */
+
+
+.footer{
+    background-color: #72D9FF;
+    display: flex;
+    height: 20vh;
+    margin-top: 20vh;
+    
 }
