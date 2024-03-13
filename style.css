@@ -1,4 +1,10 @@
-.header{
+.Header{
     display: flex;
+    background-color: rgb(41, 209, 209);
     justify-content: center;
+    
+}
+
+body{
+    margin: 0%;
 }
