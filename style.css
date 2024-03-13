@@ -2,8 +2,11 @@
     display: flex;
     background-color: #2C4954;
     justify-content: center;
+    padding: 2vh;
     
 }
+
+
 
 body{
     margin: 0%;
@@ -18,10 +21,13 @@ body{
     padding-top: 5vh;
 }
 
+
+
 #Anbefalinger_av_oss{
     display: flex;
     justify-content: center;
     padding: 5vh;
+    font-size: 10ch;
     
 }
 
