@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     background-color: #90A3A9;
-    height: 10vh;
+    height: 15vh;
     justify-content: space-between;
 }
 
@@ -81,3 +81,27 @@ body{
     margin-top: 20vh;
     
 }
+
+/* _______________________ login side */
+
+.Header_Login{
+    display: flex;
+    align-items: center;
+    background-color: #90A3A9;
+    height: 15vh;
+    justify-content: center;
+}
+
+.Header_Login img{
+    width: 15vh;
+    padding-left: 1vh;
+}
+
+.footer_login{
+    background-color: #72D9FF;
+    display: flex;
+    height: 20vh;
+    margin-top: 20vh;
+    margin-bottom: 0%;
+}
+
