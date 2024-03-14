@@ -1,11 +1,16 @@
 .Header{
     display: flex;
+    align-items: center;
     background-color: #90A3A9;
-    justify-content: center;
+    justify-content: space-between;
     height: 10vh;
     
 }
 
+.Header img{
+    width: 10vh;
+    padding-left: 1vh;
+}
 
 
 body{
