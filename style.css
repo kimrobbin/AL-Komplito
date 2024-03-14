@@ -2,9 +2,21 @@
     display: flex;
     align-items: center;
     background-color: #90A3A9;
-    justify-content: space-between;
     height: 10vh;
-    
+    justify-content: space-between;
+}
+
+.rightNav{
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+
+input{
+    border: none;
+    padding: 1vh;
+    width: 50vh;
+    border-radius: 15px;
 }
 
 .Header img{
