@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-input{
+.Header input{
     border: none;
     padding: 1vh;
     width: 50vh;
@@ -118,3 +118,24 @@ body{
     margin-bottom: 0%;
 }
 
+.brukernavn{
+    padding-top: 25vh;
+    padding-left: 13vh;
+}
+
+.passord{
+    padding-top: 17vh;
+    padding-left: 13vh;
+    
+}
+
+.login_button{
+    padding-top: 10vh;
+    padding-left: 13vh;
+
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: ;
+}
