@@ -11,9 +11,16 @@
     width: 13vh;
 }
 
+#Login{
+    width: 15vh;
+}
 .rightNav{
     display: flex;
     align-items: center;
+}
+
+.middleNav{
+    
 }
 
 .Header input{
