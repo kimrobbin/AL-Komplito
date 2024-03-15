@@ -110,13 +110,11 @@ body{
     padding-left: 1vh;
 }
 
-.footer_login{
-    background-color: #72D9FF;
+.Logg_inn{
     display: flex;
-    height: 20vh;
-    margin-top: 20vh;
-    margin-bottom: 0%;
+    justify-content: center;
 }
+
 
 .brukernavn{
     padding-top: 25vh;
@@ -132,10 +130,17 @@ body{
 .login_button{
     padding-top: 10vh;
     padding-left: 13vh;
-
+    border-radius: 4px;
 }
 
 button:hover {
     opacity: 0.8;
-    background-color: ;
+}
+
+.footer_login{
+    background-color: #72D9FF;
+    display: flex;
+    height: 20vh;
+    margin-top: 20vh;
+    margin-bottom: 0%;
 }
