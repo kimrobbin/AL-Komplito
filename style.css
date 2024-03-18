@@ -139,7 +139,7 @@ body{
     padding-left: 1vh;
 }
 
-form{
+.logginn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,19 +154,19 @@ form{
 }
 
 .brukernavn input{
-    height: 6vh;
-    font-size: 2vh;
+    height: 8vh;
+    font-size: 3vh;
 }
 
 .passord input{
-    height: 6vh;
-    font-size: 2vh;
+    height: 8vh;
+    font-size: 3vh;
 
 }
 
 button{
-    width: 8vh;
-    height: 4vh;
+    width: 10vh;
+    height: 6vh;
 }
 
 button:hover {
