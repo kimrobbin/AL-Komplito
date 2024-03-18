@@ -7,20 +7,17 @@
 }
 
 
+
 .Header img{
     width: 13vh;
 }
-
-#Login{
-    width: 15vh;
-}
 .rightNav{
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 .middleNav{
-    
+    padding-left: 15vh;
 }
 
 .Header input{
