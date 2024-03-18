@@ -33,7 +33,7 @@
 
 body{
     margin: 0%;
-    background-color: pink;
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -125,6 +125,10 @@ body{
 
 /* _______________________ login side */
 
+.login_body{
+    background-color: wheat;
+}
+
 .Header_Login{
     display: flex;
     align-items: center;
@@ -138,12 +142,12 @@ body{
     padding-left: 1vh;
 }
 
-.Logg_inn{
+form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5vh;
+    gap: 3vh;
     height: 75vh;
 }
 
@@ -153,12 +157,19 @@ body{
 }
 
 .brukernavn input{
-    height: 5vh;
+    height: 6vh;
+    font-size: 2vh;
 }
 
 .passord input{
-    height: 5vh;
-    
+    height: 6vh;
+    font-size: 2vh;
+
+}
+
+button{
+    width: 8vh;
+    height: 4vh;
 }
 
 button:hover {
