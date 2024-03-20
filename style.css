@@ -16,7 +16,13 @@
 body{
     margin: 0%;
     background-color: white;
+<<<<<<< Updated upstream
 
+=======
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+>>>>>>> Stashed changes
 }
 
 .Upperbody{
@@ -26,6 +32,16 @@ body{
     padding-top: 5vh;
 }
 
+<<<<<<< Updated upstream
+=======
+.Upperbody img{
+    width: 50vh;
+}
+
+::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+>>>>>>> Stashed changes
 /* _______________________ detter er for å dele opp koden inn i deler */
 
 
@@ -60,7 +76,7 @@ body{
 }
 
 
-/* _______________________ detter er for å dele opp koden inn i deler */
+/* _______________________ Footer */
 
 
 .footer{
@@ -69,4 +85,126 @@ body{
     height: 20vh;
     margin-top: 20vh;
     
+<<<<<<< Updated upstream
 }
+=======
+}
+
+/* _______________________ login side */
+
+.login_body{
+    background-color: wheat;
+}
+
+.Header_Login{
+    display: flex;
+    align-items: center;
+    background-color: #90A3A9;
+    height: 15vh;
+    justify-content: center;
+}
+
+.Header_Login img{
+    width: 15vh;
+    padding-left: 1vh;
+}
+
+.logginn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    height: 75vh;
+}
+
+
+.brukernavn input{
+    height: 5vh;
+}
+
+.brukernavn input{
+    height: 8vh;
+    font-size: 3vh;
+}
+
+.passord input{
+    height: 8vh;
+    font-size: 3vh;
+
+}
+
+button{
+    width: 10vh;
+    height: 6vh;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+/* _______________________ Header Anims */
+
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+  }
+  
+  
+  .menu-items.show {
+    transform: translateX(0);
+  }
+  
+  .menu-items li {
+    padding: 1vh;
+  }
+  
+  .menu-items li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 5vh;
+  }
+  
+  .line {
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .line:first-child {
+    transform-origin: top left;
+  }
+  
+  .line:last-child {
+    transform-origin: bottom left;
+  }
+  
+  .hamburger-menu.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(1px, 1px);
+  }
+  
+  .hamburger-menu.active .line:nth-child(2) {
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+>>>>>>> Stashed changes
