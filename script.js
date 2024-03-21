@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 const handlekruv = [];
 
 
@@ -10,6 +9,4 @@ function tisstest(gogogaga) {
         document.getElementById("handle").innerHTML += handlekruv[i] + "<br>"
     }    
 }
-=======
 console.log("400kr for 5g hasj")
->>>>>>> Stashed changes
