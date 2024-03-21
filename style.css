@@ -200,3 +200,70 @@ button {
 button:hover {
     opacity: 0.8;
 }
+/* _______________________ Header Anims */
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+  }
+  
+  .menu-items.show {
+    transform: translateX(0);
+  }
+  
+  .menu-items li {
+    padding: 10px;
+  }
+  
+  .menu-items li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 5vh;
+  }
+  
+  .line {
+    width: 50px;
+    height: 6px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .line:first-child {
+    transform-origin: top left;
+  }
+  
+  .line:last-child {
+    transform-origin: bottom left;
+  }
+  
+  .hamburger-menu.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(-2.1px, -11.5px);
+  }
+  
+  .hamburger-menu.active .line:nth-child(2) {
+    transform: rotate(-45deg) translate(-2.5px, 11.5px);
+  }
+
+
