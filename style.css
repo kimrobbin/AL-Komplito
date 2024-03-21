@@ -71,25 +71,44 @@ h2 {
 .anbefalt_oss {
     display: flex;
     justify-content: center;
-    height: 40vh;
+    height: 53vh;
     gap: 10vh;
     margin-bottom: 35vh
 }
 
 .GeForce_256 {
     border-style: solid;
-    padding: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     font-size: 110%;
+}
+
+
+.add_to_cart {
+    padding-right: 3vh;
+
+    background-color: wheat;
+    
+    display: flex;
+    justify-content: right;
 }
 
 .GeForce_256 img {
     width: 40vh;
+    padding-bottom: 2.9vh;
 }
 
 .GeForce_256 .geforce_info{
     background-color: wheat;
-     
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-bottom: 2vh;
 }
+
 
 
 /* _______________________ detter er for å dele opp koden inn i deler */
