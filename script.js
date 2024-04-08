@@ -16,10 +16,12 @@ function addItem(itemId) {
             handlekruv.push(produker[produkt]) // adder item to cart
 
             for (let i = 0; i < handlekruv.length; i++) { // Går gjennom cart length og lager en ny line får hver av verdi
-                document.getElementById("handle").innerHTML += handlekruv[i].name + " " + handlekruv[i].PRICE + "<br>" // Cart line
+                document.getElementById("handle").innerHTML += handlekruv[i].name + " " + handlekruv[i].PRICE + "kr" +  "<br>" // Cart line
             }
         }
     }
 }
 console.log("400kr for 5g hasj")
 
+
+// how to local storage an array with objects
