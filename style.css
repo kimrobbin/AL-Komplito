@@ -42,6 +42,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .Upperbody {
@@ -71,20 +72,22 @@ h2 {
 .anbefalt_oss {
     display: flex;
     justify-content: center;
-    height: 53vh;
+    height: 60vh;
     gap: 10vh;
     margin-bottom: 35vh
 }
 
 .GeForce_256 {
     border-style: solid;
-
+    border-radius: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 3vh;
     padding-bottom: 3vh;
     font-size: 110%;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 
