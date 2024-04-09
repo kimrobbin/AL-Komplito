@@ -21,7 +21,7 @@ function addItem(itemId) {
         }
     }
 }
-console.log("400kr for 5g hasj")
+
 
 
 // how to local storage an array with objects
