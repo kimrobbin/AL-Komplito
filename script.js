@@ -25,3 +25,9 @@ function addItem(itemId) {
 
 
 // how to local storage an array with objects
+
+localStorage.setItem("handlekurv", JSON.stringify(produker))
+
+const userData = JSON.parse(localStorage.getItem("handlekurv"))
+console.log(userData)
+
