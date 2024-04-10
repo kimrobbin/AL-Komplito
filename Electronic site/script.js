@@ -28,8 +28,8 @@ if (localStorage.getItem("handlekurv")) {
 
 const produker = [
     { "id": "1", "name": "GeForce 256", "PRICE": 180 },
-    { "id": "2", "name": "GamingKeyboard", "PRICE": 1000 },
-    { "id": "3", "name": "GamingMouse", "PRICE": 300 },
+    { "id": "2", "name": "Swotch DS", "PRICE": 3000 },
+    { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999 },
     { "id": "4", "name": "GamingLaptop", "PRICE": 12000 }
 ];
 
