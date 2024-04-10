@@ -34,4 +34,7 @@ function SaveData() {
 }
 // how to local storage an array with objects
 
-
+function TomKurv(){
+    localStorage.clear()
+    history.go()
+}
