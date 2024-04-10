@@ -1,4 +1,8 @@
-const handlekruv = [];
+let handlekruv = [];
+
+if (localStorage.getItem("handlekurv")) {
+    handlekruv = JSON.parse(localStorage.getItem('handlekurv'))
+}
 
 const produker = [
     { "id": "1", "name": "GamingPc", "PRICE": 18000 },
@@ -12,22 +16,22 @@ function addItem(itemId) {
     for (let produkt = 0; produkt < produker.length; produkt++) {
 
         if (itemId == produker[produkt].id) {
-            document.getElementById("handle").innerHTML = "" //clear handekruv
             handlekruv.push(produker[produkt]) // adder item to cart
-
-            for (let i = 0; i < handlekruv.length; i++) { // Går gjennom cart length og lager en ny line får hver av verdi
-                document.getElementById("handle").innerHTML += handlekruv[i].name + " " + handlekruv[i].PRICE + "kr" +  "<br>" // Cart line
-            }
         }
+    }
+    SaveData()
+}
+
+function UpdateCart() {
+    document.getElementById("handle").innerHTML = ""
+    for (let i = 0; i < handlekruv.length; i++) { // Går gjennom cart length og lager en ny line får hver av verdi
+        document.getElementById("handle").innerHTML += handlekruv[i].name + " " + handlekruv[i].PRICE + "kr" + "<br>"
     }
 }
 
-
-
+function SaveData() {
+    localStorage.setItem("handlekurv", JSON.stringify(handlekruv))
+}
 // how to local storage an array with objects
 
-localStorage.setItem("handlekurv", JSON.stringify(produker))
-
-const userData = JSON.parse(localStorage.getItem("handlekurv"))
-console.log(userData)
 
