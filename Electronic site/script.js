@@ -28,10 +28,13 @@ if (localStorage.getItem("handlekurv")) {
 }
 
 const produker = [
-    { "id": "1", "name": "GeForce 256", "PRICE": 180 },
+    { "id": "1", "name": "GeForce 256", "PRICE": 18000 },
     { "id": "2", "name": "Swotch DS", "PRICE": 3000 },
     { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999 },
-    { "id": "4", "name": "GamingLaptop", "PRICE": 12000 }
+    { "id": "4", "name": "Angelic9000", "PRICE": 12000 },
+    { "id": "5", "name": "ProLys", "PRICE": 1200 },
+    { "id": "6", "name": "SeeVr", "PRICE": 5348 },
+    { "id": "7", "name": "GaminPc", "PRICE": 25000 }
 ];
 
 function addItem(itemId) {
