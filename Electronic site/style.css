@@ -36,6 +36,13 @@
     border-radius: 15px;
 }
 
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 
 body {
     margin: 0%;
@@ -44,6 +51,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 }
+
 
 .Upperbody {
     display: flex;
@@ -56,7 +64,7 @@ body {
     width: 50vh;
 }
 
-/* _______________________ detter er for å dele opp koden inn i deler */
+/* _______________________ Anbefalte produkter inn i deler */
 
 
 #Anbefalinger_av_oss,
@@ -72,62 +80,57 @@ h2 {
 .anbefalt_oss {
     display: flex;
     justify-content: center;
-    height: 60vh;
-    gap: 10vh;
-    margin-bottom: 35vh
+    align-items: center;
+    gap: 5vh;
+    width: 95%;
 }
 
-.GeForce_256 {
-    border-style: solid;
-    border-radius: 2vh;
+.product_card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
     font-size: 110%;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    border: 2px solid black;
+    border-radius: 2vh;
+    background-color: red;
+    overflow: hidden; 
+    width: 430px;
+    height: 280px;
 }
 
 
 .add_to_cart {
     padding-right: 3vh;
-
-    background-color: wheat;
-    
     display: flex;
     justify-content: right;
+
 }
 
-.GeForce_256 img {
-    width: 40vh;
-    padding-bottom: 2.9vh;
+.product_card_item{
+    height: 160px;
 }
 
-.GeForce_256 .geforce_info{
+.product_card img {
+    width: auto;   
+    height: 130px;
+}
+
+.product_card .product_card_info{
     background-color: wheat;
-    padding-left: 1vh;
-    padding-right: 1vh;
-    padding-bottom: 2vh;
+    width: 100%;
+    height: 100%;    
+}
+
+.product_card p{
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 
-
-/* _______________________ detter er for å dele opp koden inn i deler */
-
-
-.Ukas_Produkt {
-    display: flex;
-    justify-content: center;
-    height: 40vh;
-    gap: 8vh;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
-    padding-bottom: 5vh;
+/* _______________________ Her er ukas produkter  */
 
 
-}
+
 
 /* _______________________ Shopping page */
 

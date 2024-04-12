@@ -1,3 +1,5 @@
+// youssef sin kode (shit)
+
 console.log("400kr for 5g hasj")
 document.addEventListener('DOMContentLoaded', function () {
     const menuBtn = document.querySelector('.hamburger-menu');
@@ -15,3 +17,47 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+//shoppingcart og de sakene :) (goood kode)
+let handlekruv = [];
+
+if (localStorage.getItem("handlekurv")) {
+    handlekruv = JSON.parse(localStorage.getItem('handlekurv'))
+}
+
+const produker = [
+    { "id": "1", "name": "GeForce 256", "PRICE": 180 },
+    { "id": "2", "name": "Swotch DS", "PRICE": 3000 },
+    { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999 },
+    { "id": "4", "name": "GamingLaptop", "PRICE": 12000 }
+];
+
+function addItem(itemId) {
+    console.log("lungekreft")
+    for (let produkt = 0; produkt < produker.length; produkt++) {
+
+        if (itemId == produker[produkt].id) {
+            handlekruv.push(produker[produkt]) // adder item to cart
+        }
+    }
+    SaveData()
+}
+
+function UpdateCart() {
+    document.getElementById("handle").innerHTML = ""
+    for (let i = 0; i < handlekruv.length; i++) { // Går gjennom cart length og lager en ny line får hver av verdi
+        document.getElementById("handle").innerHTML += handlekruv[i].name + " " + handlekruv[i].PRICE + "kr" + "<br>"
+    }
+}
+
+function SaveData() {
+    localStorage.setItem("handlekurv", JSON.stringify(handlekruv))
+}
+// how to local storage an array with objects
+
+function TomKurv(){
+    localStorage.clear()
+    history.go()
+}
