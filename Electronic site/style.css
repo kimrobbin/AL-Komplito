@@ -130,16 +130,7 @@ h2 {
 /* _______________________ Her er ukas produkter  */
 
 
-.Ukas_Produkt {
-    display: flex;
-    justify-content: center;
-    height: 40vh;
-    gap: 8vh;
-    padding-bottom: 5vh;
-}
-.Ukas_Produkt img {
-    width: 20%;
-}
+
 
 /* _______________________ Shopping page */
 
