@@ -52,6 +52,13 @@ body {
     overflow-x: hidden;
 }
 
+.footer {
+    background-color: #72D9FF;
+    display: flex;
+    height: 20vh;
+    margin-top: 10%;
+
+}
 
 .Upperbody {
     display: flex;
@@ -125,14 +132,13 @@ h2 {
 .product_card p{
     padding-left: 2%;
     padding-right: 2%;
+    color: white;
 }
 
 
-/* Footer */
 
-footer{
-    margin-top: 5vh;
-}
+
+
 
 
 
@@ -169,13 +175,7 @@ footer{
 /* _______________________ detter er for å dele opp koden inn i deler */
 
 
-.footer {
-    background-color: #72D9FF;
-    display: flex;
-    height: 20vh;
-    margin-top: auto;
 
-}
 
 /* _______________________ login side */
 
