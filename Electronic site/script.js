@@ -1,3 +1,5 @@
+// youssef sin kode (shit)
+
 console.log("400kr for 5g hasj")
 document.addEventListener('DOMContentLoaded', function () {
     const menuBtn = document.querySelector('.hamburger-menu');
@@ -15,11 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-// youssef sin kode ^^^
 
 
 
-//shoppingcart og de sakene :)
+//shoppingcart og de sakene :) (goood kode)
 let handlekruv = [];
 
 if (localStorage.getItem("handlekurv")) {
@@ -34,7 +35,7 @@ const produker = [
 ];
 
 function addItem(itemId) {
-
+    console.log("lungekreft")
     for (let produkt = 0; produkt < produker.length; produkt++) {
 
         if (itemId == produker[produkt].id) {
