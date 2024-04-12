@@ -56,15 +56,16 @@ body {
 .Upperbody {
     display: flex;
     justify-content: center;
-    height: 50vh;
+
     padding-top: 5vh;
 }
 
 .Upperbody img {
-    width: 50vh;
+  width: 60%;
+  border-radius: 3VH;
 }
 
-/* _______________________ Anbefalte produkter inn i deler */
+/* _______________________  produkter  */
 
 
 #Anbefalinger_av_oss,
@@ -127,8 +128,11 @@ h2 {
 }
 
 
-/* _______________________ Her er ukas produkter  */
+/* Footer */
 
+footer{
+    margin-top: 5vh;
+}
 
 
 
