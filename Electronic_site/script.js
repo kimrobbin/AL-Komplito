@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//shoppingcart og de sakene :) (goood kode)
+//shoppingcart og de sakene :) (goood kode)(Jonathan)
 let handlekruv = [];
 
 if (localStorage.getItem("handlekurv")) {
