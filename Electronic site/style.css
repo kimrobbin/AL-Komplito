@@ -53,7 +53,7 @@ body {
 }
 
 .footer {
-    background-color: #72D9FF;
+    background-color: #90A3A9;
     display: flex;
     height: 20vh;
     margin-top: 10%;
@@ -180,7 +180,7 @@ h2 {
 /* _______________________ login side */
 
 .login_body {
-    background-color: wheat;
+    background-color: #3B83BD;
 }
 
 .Header_Login {
