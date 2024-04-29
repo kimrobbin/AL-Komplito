@@ -38,7 +38,6 @@ const produker = [
 ];
 
 function addItem(itemId) {
-    console.log("lungekreft")
     for (let produkt = 0; produkt < produker.length; produkt++) {
 
         if (itemId == produker[produkt].id) {
