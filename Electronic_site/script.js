@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//shoppingcart og de sakene :) (goood kode)
+//shoppingcart og de sakene :) (goood kode)(Jonathan)
 let handlekruv = [];
 
 if (localStorage.getItem("handlekurv")) {
@@ -38,7 +38,6 @@ const produker = [
 ];
 
 function addItem(itemId) {
-    console.log("lungekreft")
     for (let produkt = 0; produkt < produker.length; produkt++) {
 
         if (itemId == produker[produkt].id) {

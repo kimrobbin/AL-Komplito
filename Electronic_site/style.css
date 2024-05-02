@@ -116,6 +116,8 @@ h2 {
 
 .product_card_item{
     height: 160px;
+    display: flex;
+    justify-content: center;
 }
 
 .product_card img {
@@ -294,5 +296,21 @@ button:hover {
   .hamburger-menu.active .line:nth-child(2) {
     transform: rotate(-45deg) translate(-2.5px, 11.5px);
   }
+
+  .product_card {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.product_card:hover, .product_card:focus, .product_card:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 
