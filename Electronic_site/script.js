@@ -1,6 +1,7 @@
 // youssef sin kode (shit)
 
-console.log("400kr for 5g hasj")
+console.log("412kr for 5g hasj")
+
 document.addEventListener('DOMContentLoaded', function () {
     const menuBtn = document.querySelector('.hamburger-menu');
     const menuItems = document.querySelector('.menu-items');
@@ -28,13 +29,13 @@ if (localStorage.getItem("handlekurv")) {
 }
 
 const produker = [
-    { "id": "1", "name": "GeForce 256", "PRICE": 18000 },
-    { "id": "2", "name": "Swotch DS", "PRICE": 3000 },
-    { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999 },
-    { "id": "4", "name": "Angelic9000", "PRICE": 12000 },
-    { "id": "5", "name": "ProLys", "PRICE": 1200 },
-    { "id": "6", "name": "SeeVr", "PRICE": 5348 },
-    { "id": "7", "name": "GaminPc", "PRICE": 25000 }
+    { "id": "1", "name": "GeForce 256", "PRICE": 18000, "amount": 0},
+    { "id": "2", "name": "Swotch DS", "PRICE": 3000, "amount": 0 },
+    { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999, "amount": 0 },
+    { "id": "4", "name": "Angelic9000", "PRICE": 12000, "amount": 0 },
+    { "id": "5", "name": "ProLys", "PRICE": 1200, "amount": 0 },
+    { "id": "6", "name": "SeeVr", "PRICE": 5348, "amount": 0 },
+    { "id": "7", "name": "GaminPc", "PRICE": 25000, "amount": 0 }
 ];
 
 function addItem(itemId) {
