@@ -56,9 +56,11 @@ body {
     background-color: #90A3A9;
     display: flex;
     height: 20vh;
-    margin-top: 10%;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
 
 .Upperbody {
     display: flex;
