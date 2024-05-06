@@ -29,7 +29,7 @@ if (localStorage.getItem("handlekurv")) {
 }
 
 const produker = [
-    { "id": "1", "name": "GeForce 256", "PRICE": 18000, "amount": 0},
+    { "id": "1", "name": "GeForce 256", "PRICE": 18000, "amount": 0 },
     { "id": "2", "name": "Swotch DS", "PRICE": 3000, "amount": 0 },
     { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999, "amount": 0 },
     { "id": "4", "name": "Angelic9000", "PRICE": 12000, "amount": 0 },
@@ -60,7 +60,7 @@ function SaveData() {
 }
 // how to local storage an array with objects
 
-function TomKurv(){
+function TomKurv() {
     localStorage.clear()
     history.go()
 }
