@@ -104,6 +104,7 @@ h2 {
     overflow: hidden; 
     width: 430px;
     height: 280px;
+    padding-bottom: 1.5vh;
 }
 
 
@@ -111,7 +112,15 @@ h2 {
     padding-right: 3vh;
     display: flex;
     justify-content: right;
+    
+}
 
+.add_to_cart button {
+    border-radius: 5vh;
+    background-color: #EDF7F6;
+    width: 15vh;
+    border: none;
+    
 }
 
 .product_card_item{
@@ -129,6 +138,7 @@ h2 {
     background-color: #3B83BD   ;
     width: 100%;
     height: 100%;    
+    padding-top: 0.1vh;
 }
 
 .product_card p{
@@ -230,6 +240,8 @@ button {
 
 button:hover {
     opacity: 0.8;
+    background-color: #82EEFD ;
+
 }
 /* _______________________ Header Anims */
 
