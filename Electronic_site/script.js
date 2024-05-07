@@ -22,14 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //shoppingcart og de sakene :) (goood kode)(Jonathan)
-let handlekruv = [];
-
-if (localStorage.getItem("handlekurv")) {
-    handlekruv = JSON.parse(localStorage.getItem('handlekurv'))
-}
+let handlekruv = localStorage.getItem("handlekurv") ? JSON.parse(localStorage.getItem('handlekurv')) : [];
 
 const produker = [
-    { "id": "1", "name": "GeForce 256", "PRICE": 18000, "amount": 0},
+    { "id": "1", "name": "GeForce 256", "PRICE": 18000, "amount": 0 },
     { "id": "2", "name": "Swotch DS", "PRICE": 3000, "amount": 0 },
     { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999, "amount": 0 },
     { "id": "4", "name": "Angelic9000", "PRICE": 12000, "amount": 0 },
@@ -39,28 +35,46 @@ const produker = [
 ];
 
 function addItem(itemId) {
-    for (let produkt = 0; produkt < produker.length; produkt++) {
+    let produkt = produker.find(p => p.id === itemId);
+    let itemInCart = handlekruv.find(item => item.id === itemId);
 
-        if (itemId == produker[produkt].id) {
-            handlekruv.push(produker[produkt]) // adder item to cart
-        }
+    if (itemInCart) {
+        itemInCart.amount++;
+    } else {
+        handlekruv.push({...produkt, amount: 1}); // add item to cart with amount 1
     }
-    SaveData()
+    saveData();
 }
 
-function UpdateCart() {
-    document.getElementById("handle").innerHTML = ""
-    for (let i = 0; i < handlekruv.length; i++) { // Går gjennom cart length og lager en ny line får hver av verdi
-        document.getElementById("handle").innerHTML += handlekruv[i].name + " " + handlekruv[i].PRICE + "kr" + "<br>"
+function removeItem(itemId) {
+    handlekruv = handlekruv.filter(item => item.id !== itemId);
+    saveData();
+}
+
+function updateItemAmount(itemId, amount) {
+    let itemInCart = handlekruv.find(item => item.id === itemId);
+    if (itemInCart) {
+        itemInCart.amount = amount;
     }
+    saveData();
 }
 
-function SaveData() {
-    localStorage.setItem("handlekurv", JSON.stringify(handlekruv))
+function updateCart() {
+    document.getElementById("handle").innerHTML = "";
+    let total = 0;
+    for (let item of handlekruv) {
+        total += item.PRICE * item.amount;
+        document.getElementById("handle").innerHTML += `${item.name} ${item.PRICE}kr x ${item.amount}<br>`;
+    }
+    document.getElementById("handle").innerHTML += `Total: ${total}kr<br>`;
 }
-// how to local storage an array with objects
 
-function TomKurv(){
-    localStorage.clear()
-    history.go()
+function saveData() {
+    localStorage.setItem("handlekurv", JSON.stringify(handlekruv));
 }
+
+function tomKurv() {
+    localStorage.removeItem('handlekurv');
+    history.go();
+}
+
