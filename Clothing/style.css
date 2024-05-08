@@ -137,7 +137,8 @@ body {
 }
 
 .BGSticker:not(:hover) {
-    transform: scale(1); 
+    animation: removeBox .5s;
+    transform: scale(1);
 }
 
 .UpperbodyFlex{
@@ -155,5 +156,184 @@ body {
     }
   }
 
+@keyframes removeBox{
+    from {
+        transform: scale(1.3);
+    }
+    to{
+        transform: scale(1);
+    }
+}
 
+.row1{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 25vh;
+    margin-bottom: 5vh;
+}
   
+
+.miniNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 59vh;
+    width: 100%;
+    height: 5vh;
+    background-color: gray;
+}
+
+.Catalog img{
+    width: 100%;
+    height: 65%;
+}
+
+.itemBox{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 30px;
+    background-color: rgb(133, 133, 133);
+}
+
+
+
+.row2{
+    display: flex;
+    justify-content: center;
+    gap: 15vh;
+    margin-top: 15vh;
+}
+
+.miniTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(114, 217, 255);
+}
+
+.buyButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    width: 10vh;
+    height: 5vh;
+    border-radius: 15px;
+    opacity: 50%;
+    color: white;
+}
+
+.itemInfo{
+    width: 70%;
+}
+
+.itemContent{
+    display: flex;
+    align-items: center;
+}
+
+.buyButton:hover{
+    background-color: white;
+    animation: createBox .5s;
+    transform: scale(1.3);
+}
+
+.buyButton:hover h1{
+    color: black;
+}
+
+.buyButton:not(:hover) {
+    animation: removeBox .5s;
+    transform: scale(1);
+}
+
+/* Media Queries */
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .Header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .LeftNav img {
+        width: 50%;
+        margin: 1vh 0;
+    }
+
+    .middleNav {
+        padding-left: 0;
+        margin-top: 2vh;
+    }
+
+    .middleNav input {
+        width: 80%;
+    }
+
+    .rightNav {
+        margin-top: 2vh;
+    }
+
+    .miniNav {
+        gap: 3vh;
+    }
+
+    .row1, .row2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    .itemBox {
+        width: 90%;
+    }
+
+    .buyButton {
+        width: 50%;
+        font-size: 0.8em;
+    }
+
+    .itemInfo {
+        width: 100%;
+        font-size: 0.8em;
+    }
+}
+
+/* For screens between 769px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header adjustments */
+    .Header {
+        height: 15vh;
+    }
+
+    .middleNav input {
+        width: 50%; /* Adjust input width */
+    }
+
+    .miniNav {
+        gap: 7vh; /* Adjust gap */
+    }
+
+    .row1, .row2 {
+        gap: 3vh; /* Adjust gap */
+    }
+
+    .itemBox {
+        width: 45%; /* Adjust item box width */
+    }
+
+    .buyButton {
+        width: 30%; /* Adjust button width */
+        font-size: 0.8em; /* Adjust font size */
+    }
+
+    .itemInfo {
+        width: 80%; /* Adjust text container width */
+        font-size: 0.9em; /* Adjust font size */
+        word-wrap: break-word; /* Ensure long words wrap */
+    }
+}
