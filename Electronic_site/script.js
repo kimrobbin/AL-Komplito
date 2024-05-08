@@ -1,4 +1,4 @@
-// youssef sin kode (shit)
+// youssef sin kode 
 
 console.log("412kr for 5g hasj")
 

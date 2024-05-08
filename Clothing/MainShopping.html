@@ -5,59 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover(lisence).css">
     <title>Cl-Komplito</title>
 </head>
 
 <body>
     <div class="Header">
         <div class="LeftNav">
-            <a href="index.html"> <img src="bilder/AlKomplito.png" alt="Al-Komplito Logo"> </a>
+            <a href="index.html"> <img src="bilder/clKomplitoLogo.svg" alt="Al-Komplito Logo"> </a>
         </div>
         <div class="middleNav">
             <input type="text" placeholder="Search...">
+            <img src="bilder/Search Icon.svg" alt="">
         </div>
         <div class="rightNav">
             <div class="rightNavCart">
-                <a href="cart.html"><img src="bilder/shopping_bag_black_24dp (1).svg" alt="Cart Checkout"></a>
+                <a href="cart.html"><img src="bilder/ShoppingBagNoFill.svg" alt="Cart Checkout"></a>
             </div>
         </div>
 
     </div>
     <div class="miniNav">
-        <p>
-            Bukser
-        </p>
-
-        <p>
-            T-Shirts
-        </p>
-
-        <p>
-            Placeholder
-        </p>
+        <button onclick="filterItems('all')" class="hvr-underline-from-center hvr-grow">All</button>
+        <button onclick="filterItems('bukser')" class="hvr-underline-from-center hvr-grow">Bukser</button>
+        <button onclick="filterItems('t-shirts')" class="hvr-underline-from-center hvr-grow">T-Shirts</button>
     </div>
 
     <div class="Catalog">
         <div class="row1">
-            <div class="itemBox" id="a">
-                <img src="bilder/commingsoon.webp" alt="">
-                <div class="itemContent">
-                    <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna 
-                       </div>
-                    <div class="buyButton">
-                        <h1>Vis</h1>
-                    </div>
+            <div class="itemBox" id="a" data-category="bukser">
+                <div class="imagewrapper">
+                    <img class="image" src="bilder/commingsoon.webp" alt="">
                 </div>
-
-            </div>
- 
-            <div class="itemBox" id="b">
-                <img src="bilder/commingsoon.webp" alt="">
                 <div class="itemContent">
                     <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                      </div>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </div>
                     <div class="buyButton">
                         <h1>Vis</h1>
                     </div>
@@ -65,12 +48,29 @@
 
             </div>
 
-            <div class="itemBox" id="c">
-                <img src="bilder/commingsoon.webp" alt="">
+            <div class="itemBox" id="b" data-category="t-shirts">
+                <div class="imagewrapper">
+                    <img class="image" src="bilder/commingsoon.webp" alt="">
+                </div>
                 <div class="itemContent">
                     <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                      </div>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </div>
+                    <div class="buyButton">
+                        <h1>Vis</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="itemBox" id="c" data-category="t-shirts">
+                <div class="imagewrapper">
+                    <img class="image" src="bilder/commingsoon.webp" alt="">
+                </div>
+                <div class="itemContent">
+                    <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </div>
                     <div class="buyButton">
                         <h1>Vis</h1>
                     </div>
@@ -81,17 +81,19 @@
 
         </div>
 
-        <div class="miniTitle">
+        <div class="miniTitle" id="ukensTilbud">
             <h1> Ukens tilbud</h1>
         </div>
 
         <div class="row2">
-            <div class="itemBox" id="d">
-                <img src="bilder/commingsoon.webp" alt="">
+            <div class="itemBox" id="d" data-category="t-shirts">
+                <div class="imagewrapper">
+                    <img class="image" src="bilder/commingsoon.webp" alt="">
+                </div>
                 <div class="itemContent">
                     <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                      </div>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </div>
                     <div class="buyButton">
                         <h1>Vis</h1>
                     </div>
@@ -99,12 +101,14 @@
 
             </div>
 
-            <div class="itemBox" id="e">
-                <img src="bilder/commingsoon.webp" alt="">
+            <div class="itemBox" id="e" data-category="t-shirts">
+                <div class="imagewrapper">
+                    <img class="image" src="bilder/commingsoon.webp" alt="">
+                </div>
                 <div class="itemContent">
                     <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                      </div>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </div>
                     <div class="buyButton">
                         <h1>Vis</h1>
                     </div>
@@ -112,12 +116,14 @@
 
             </div>
 
-            <div class="itemBox" id="f">
-                <img src="bilder/commingsoon.webp" alt="">
+            <div class="itemBox" id="f" data-category="t-shirts">
+                <div class="imagewrapper">
+                    <img class="image" src="bilder/commingsoon.webp" alt="">
+                </div>
                 <div class="itemContent">
                     <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                      </div>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </div>
                     <div class="buyButton">
                         <h1>Vis</h1>
                     </div>
@@ -125,12 +131,14 @@
 
             </div>
 
-            <div class="itemBox" id="g">
-                <img src="bilder/commingsoon.webp" alt="">
+            <div class="itemBox" id="g" data-category="t-shirts">
+                <div class="imagewrapper">
+                    <img class="image" src="bilder/commingsoon.webp" alt="">
+                </div>
                 <div class="itemContent">
                     <div class="itemInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                      </div>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </div>
                     <div class="buyButton">
                         <h1>Vis</h1>
                     </div>
@@ -144,6 +152,8 @@
 
 
         </div>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
