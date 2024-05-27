@@ -19,6 +19,7 @@
 
 .LeftNav img {
     width: 13vh;
+    padding-left: 2.5vh;
 }
 
 
@@ -36,9 +37,9 @@
     align-items: center;
 }
 
-.middleNav {
+/* .middleNav {
     padding-left: 11vh;
-}
+} */
 
 #Searchbar_hamburger{
     display: none;
@@ -83,7 +84,7 @@ body {
 .Upperbody {
     display: flex;
     justify-content: center;
-    padding-top: 20vh;
+    padding-top: 25vh;
 }
 
 .Upperbody img {
