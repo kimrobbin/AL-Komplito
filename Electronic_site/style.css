@@ -80,6 +80,11 @@ body {
     z-index: 1;
 }
 
+#linkerRegler{
+    text-decoration: none;
+    padding-left: 2vh;
+    
+}
 
 .Upperbody {
     display: flex;
