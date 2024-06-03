@@ -6,7 +6,7 @@ function filterItems(category) {
         items.forEach(item => {
             item.style.display = 'block';
         });
-    } else {
+    } else if (category === 'hoodies') {
         ukensTilbud.style.display = 'none';
         items.forEach(item => {
             if (item.getAttribute('data-category') === category) {
@@ -15,8 +15,18 @@ function filterItems(category) {
                 item.style.display = 'none';
             }
         });
+    } else {
+        ukensTilbud.style.display = 'none';
+        items.forEach(item => {
+            if (item.getAttribute('data-category') === category || item.getAttribute('data-category') === 'hoodies') {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
     }
 }
+
 
 if (window.location.pathname.includes('index.html')) {
     const navbar = document.querySelector('.Header');
