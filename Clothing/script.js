@@ -51,3 +51,7 @@ if (window.location.pathname.includes('index.html')) {
         console.error('One or more elements not found');
     }
 }
+
+
+
+
