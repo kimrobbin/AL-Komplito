@@ -24,6 +24,7 @@ if (window.location.pathname.includes('index.html')) {
     const cartIcon = document.getElementById('cart');
     const cartD = document.getElementById('cartD')
     const MainShop = document.getElementById('MainShopID')
+    const SearchBar = document.getElementById('')
 
     if (navbar && logo && cartIcon) {
         navbar.classList.add('Transparent');
