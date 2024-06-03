@@ -64,9 +64,9 @@ function updateCart() {
     let total = 0;
     for (let item of handlekruv) {
         total += item.PRICE * item.amount;
-        document.getElementById("handle").innerHTML += `${item.name} ${item.PRICE}kr x ${item.amount}<br>`;
+        document.getElementById("handle").innerHTML += `<div class="product"> ${item.name} ${item.PRICE}kr x ${item.amount}</div>`;
     }
-    document.getElementById("handle").innerHTML += `Total: ${total}kr<br>`;
+    document.getElementById("handle").innerHTML += ` <div class="product"> Total: ${total}kr`;
 }
 
 function saveData() {
