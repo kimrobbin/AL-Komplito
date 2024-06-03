@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 body {
@@ -59,6 +59,10 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+}
+
+.p {
+    font-family: Century Gothic;
 }
 
 .footer{
@@ -83,6 +87,7 @@ body {
 #linkerRegler{
     text-decoration: none;
     padding-left: 2vh;
+    gap: 5vh;
     
 }
 
@@ -363,7 +368,6 @@ button:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 
 /* Respponivt */
