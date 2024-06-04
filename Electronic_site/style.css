@@ -343,7 +343,7 @@ button:hover {
   .line {
     width: 50px;
     height: 6px;
-    background-color: #fff;
+    background-color: #0C1713;
     margin: 4px 0;
     transition: transform 0.3s ease;
   }
