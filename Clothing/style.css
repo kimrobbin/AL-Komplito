@@ -351,6 +351,43 @@ a{
     gap: 15vh;
 }
 
+/* About us */
+
+.AboutUsHeader img{
+    width: 15vh;
+}
+
+.AboutUsHeader{
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #2C4954;
+    align-items: center;
+}
+
+.AboutUsContent{
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUsContentBox{
+    background-color: #2C4954;
+    padding: 2vh;
+    width: 30%;
+    height: fit-content;
+    border-style: solid;
+    border-radius: 15px;
+    color: white;
+}
+
  
 
 
@@ -417,6 +454,8 @@ a{
         font-size: 3vh;
     }
 }
+
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
