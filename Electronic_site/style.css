@@ -201,6 +201,25 @@ h2 {
     margin-top: 8%;
 }
 
+
+
+.product button {
+    border-radius:100%;
+    background-color: transparent;
+    width: 4vh;
+    height: 4vh;
+    border: none;
+}
+
+.product button:hover {
+    background-color: transparent;
+}
+
+.PRICE {
+
+}
+
+
 .itemList {
     background-color: gray;
     width: 100%;
@@ -210,6 +229,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 5vh;
+    margin-bottom: 2vh;
 }
 
 .leftItemList {
