@@ -76,7 +76,7 @@ function updateCart() {
 
         <div class="product-price"> ${item.PRICE} kr</div>
 
-        <div class="product-amount"> ${item.amount}</div>
+        <div class="product-amount"> ${item.amount}x</div>
         
         <div class="product-knapp">
         <button onclick="removeItem('${item.id}')">x</button></div></div>`;

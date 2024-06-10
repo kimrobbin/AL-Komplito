@@ -199,21 +199,9 @@ h2 {
 
 
 
-.product-knapp button {
-    border-radius:100%;
-    background-color: transparent;
-    width: 4vh;
-    height: 4vh;
-    border: none;
-}
 
-.product-knapp button:hover {
-    background-color: transparent;
-}
 
-.product-navn {
-    width: 30vh;
-}
+
 
 
 .itemList {
@@ -255,7 +243,38 @@ h2 {
 
 .product-wrapper{
     display: flex;
-    gap: 3vh;
+    gap: 2vh;
+    justify-content: left;
+}
+
+.product-knapp button  {
+    border-radius:100%;
+    background-color: transparent;
+    width: 4vh;
+    height: 4vh;
+    border: none;
+
+}
+
+.product-knapp button:hover {
+    background-color: transparent;
+
+
+}
+
+.product-navn {
+    width: 20vh;
+}
+
+.product-price{
+    padding-left: 106vh;
+    width: 20vh;
+
+}
+
+.product-amount {
+    width: 18vh;
+
 }
 
 /* _______________________ detter er for å dele opp koden inn i deler */
@@ -319,6 +338,7 @@ button {
     width: 10vh;
     height: 6vh;
     border: none ;
+    cursor:pointer;
     
 }
 
