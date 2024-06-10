@@ -46,10 +46,19 @@ function addItem(itemId) {
     saveData();
 }
 
-function removeItem(itemId) {
-    handlekruv = handlekruv.filter(item => item.id !== itemId);
+window.removeItem = function(itemId) {
+    let itemInCart = handlekruv.find(item => item.id === itemId);
+    if (itemInCart) {
+        itemInCart.amount--;
+        if (itemInCart.amount === 0) {
+            handlekruv = handlekruv.filter(item => item.id !== itemId);
+        }
+    }
+    updateCart();
     saveData();
 }
+
+
 
 function updateItemAmount(itemId, amount) {
     let itemInCart = handlekruv.find(item => item.id === itemId);
@@ -64,7 +73,7 @@ function updateCart() {
     let total = 0;
     for (let item of handlekruv) {
         total += item.PRICE * item.amount;
-        document.getElementById("handle").innerHTML += `<div class="product"> ${item.name} ${item.PRICE}kr x ${item.amount}</div>`;
+        document.getElementById("handle").innerHTML += `<div class="product"> ${item.name} ${item.PRICE}kr x ${item.amount} <button onclick="removeItem('${item.id}')">x</button></div>`;
     }
     document.getElementById("handle").innerHTML += ` <div class="product"> Total: ${total}kr </div>`;
 }

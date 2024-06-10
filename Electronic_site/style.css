@@ -201,6 +201,25 @@ h2 {
     margin-top: 8%;
 }
 
+
+
+.product button {
+    border-radius:100%;
+    background-color: transparent;
+    width: 4vh;
+    height: 4vh;
+    border: none;
+}
+
+.product button:hover {
+    background-color: transparent;
+}
+
+.PRICE {
+
+}
+
+
 .itemList {
     background-color: gray;
     width: 100%;
@@ -210,6 +229,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 5vh;
+    margin-bottom: 2vh;
 }
 
 .leftItemList {
@@ -343,7 +363,7 @@ button:hover {
   .line {
     width: 50px;
     height: 6px;
-    background-color: #fff;
+    background-color: #0C1713;
     margin: 4px 0;
     transition: transform 0.3s ease;
   }
@@ -433,3 +453,11 @@ button:hover {
 
  
 }
+
+/* licens  /* 
+
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover 
