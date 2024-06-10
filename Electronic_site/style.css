@@ -163,6 +163,7 @@ h2 {
     width: 15vh;
     border: none;
     
+    
 }
 
 .product_card_item{
@@ -174,6 +175,7 @@ h2 {
 .product_card img {
     width: auto;   
     height: 130px;
+    padding-bottom: 2vh;
 }
 
 .product_card .product_card_info{
@@ -186,15 +188,9 @@ h2 {
     padding-left: 2%;
     padding-right: 2%;
     color: white;
+    padding-top: 1.3vh;
+
 }
-
-
-
-
-
-
-
-
 /* _______________________ Shopping page */
 
 #Handlekurv {
@@ -203,7 +199,7 @@ h2 {
 
 
 
-.product button {
+.product-knapp button {
     border-radius:100%;
     background-color: transparent;
     width: 4vh;
@@ -211,8 +207,12 @@ h2 {
     border: none;
 }
 
-.product button:hover {
+.product-knapp button:hover {
     background-color: transparent;
+}
+
+.product-navn {
+    width: 30vh;
 }
 
 
@@ -253,6 +253,10 @@ h2 {
     background-color: #ffdfdf;
 }
 
+.product-wrapper{
+    display: flex;
+    gap: 3vh;
+}
 
 /* _______________________ detter er for å dele opp koden inn i deler */
 
@@ -288,24 +292,34 @@ h2 {
 }
 
 
-.brukernavn input {
-    height: 5vh;
-}
+
 
 .brukernavn input {
     height: 8vh;
-    font-size: 3vh;
+    width: 25vh ;
+    font-size: 2.5vh;
+    border-radius: 2vh;
+    border: transparent; 
 }
 
 .passord input {
     height: 8vh;
-    font-size: 3vh;
+    width: 25vh ;
+    font-size: 2.5vh;  
+    border-radius: 2vh;
+    border: transparent;
+}
 
+.login_button button{
+    border: none;
+    border-radius: 2vh;
 }
 
 button {
     width: 10vh;
     height: 6vh;
+    border: none ;
+    
 }
 
 button:hover {

@@ -1,7 +1,4 @@
 // youssef sin kode 
-
-console.log("412kr for 5g hasj")
-
 document.addEventListener('DOMContentLoaded', function () {
     const menuBtn = document.querySelector('.hamburger-menu');
     const menuItems = document.querySelector('.menu-items');
@@ -22,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //shoppingcart og de sakene :) (goood kode)(Jonathan)
+console.log("412kr for 5g hasj")
 let handlekruv = localStorage.getItem("handlekurv") ? JSON.parse(localStorage.getItem('handlekurv')) : [];
 
 const produker = [
@@ -41,12 +39,12 @@ function addItem(itemId) {
     if (itemInCart) {
         itemInCart.amount++;
     } else {
-        handlekruv.push({...produkt, amount: 1}); // add item to cart with amount 1
+        handlekruv.push({ ...produkt, amount: 1 }); // add item to cart with amount 1
     }
     saveData();
 }
 
-window.removeItem = function(itemId) {
+window.removeItem = function (itemId) {
     let itemInCart = handlekruv.find(item => item.id === itemId);
     if (itemInCart) {
         itemInCart.amount--;
@@ -73,7 +71,15 @@ function updateCart() {
     let total = 0;
     for (let item of handlekruv) {
         total += item.PRICE * item.amount;
-        document.getElementById("handle").innerHTML += `<div class="product"> ${item.name} ${item.PRICE}kr x ${item.amount} <button onclick="removeItem('${item.id}')">x</button></div>`;
+        document.getElementById("handle").innerHTML += `<div class="product-wrapper">
+        <div class="product-navn"> ${item.name}</div>
+
+        <div class="product-price"> ${item.PRICE} kr</div>
+
+        <div class="product-amount"> ${item.amount}</div>
+        
+        <div class="product-knapp">
+        <button onclick="removeItem('${item.id}')">x</button></div></div>`;
     }
     document.getElementById("handle").innerHTML += ` <div class="product"> Total: ${total}kr </div>`;
 }
