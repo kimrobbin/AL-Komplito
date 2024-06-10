@@ -347,6 +347,15 @@ a{
     gap: 15vh;
 }
 
+.swiper {
+    width: 60vh;
+    height: 40vh;
+  }
+
+
+
+
+
 /* About us */
 
 .AboutUsHeader img{
