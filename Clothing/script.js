@@ -65,6 +65,8 @@ if (window.location.pathname.includes('index.html')) {
 
 
 
+
+
 //shoppingcart og de sakene :) (goood kode)(Jonathan)
 let handlekruv = localStorage.getItem("handlekurv") ? JSON.parse(localStorage.getItem('handlekurv')) : [];
 
@@ -135,6 +137,22 @@ function tomKurv() {
 
 
 
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
 
 const swiper = new Swiper('.swiper', {
@@ -153,4 +171,6 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+
 
