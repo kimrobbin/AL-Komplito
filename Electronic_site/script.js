@@ -24,8 +24,8 @@ let handlekruv = localStorage.getItem("handlekurv") ? JSON.parse(localStorage.ge
 
 const produker = [
     { "id": "1", "name": "GeForce 256", "PRICE": 18000, "amount": 0 },
-    { "id": "2", "name": "Swotch DS", "PRICE": 3000, "amount": 0 },
-    { "id": "3", "name": "CIBERTRONK", "PRICE": 99999999, "amount": 0 },
+    { "id": "2", "name": "Switch DS", "PRICE": 3000, "amount": 0 },
+    { "id": "3", "name": "CIBERTRONK", "PRICE": 999999, "amount": 0 },
     { "id": "4", "name": "Angelic9000", "PRICE": 12000, "amount": 0 },
     { "id": "5", "name": "ProLys", "PRICE": 1200, "amount": 0 },
     { "id": "6", "name": "SeeVr", "PRICE": 5348, "amount": 0 },
