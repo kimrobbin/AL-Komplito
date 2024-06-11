@@ -86,7 +86,17 @@ function addItem(itemId) {
         handlekruv.push({...produkt, amount:     1}); // add item to cart with amount 1
     }
     saveData();
+    cartCount();
     console.log("du la til no i kurven lessgoo")
+}
+
+function cartCount() {
+    let totalAmout = 0
+for (let item of handlekruv){
+
+   totalAmout += item.amount
+   console.log(totalAmout)
+}    
 }
 
 window.removeItem = function(itemId) {
