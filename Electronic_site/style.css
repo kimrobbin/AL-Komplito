@@ -245,6 +245,7 @@ h2 {
     display: flex;
     gap: 2vh;
     justify-content: left;
+    padding-left: 1vh;
 }
 
 .product-knapp button  {
@@ -263,18 +264,27 @@ h2 {
 }
 
 .product-navn {
-    width: 20vh;
+    width: 9.8vw;
+
 }
 
 .product-price{
-    padding-left: 106vh;
-    width: 20vh;
+    padding-left: 51vw;
+    width: 9vw;
 
 }
 
 .product-amount {
-    width: 18vh;
+    width: 8.5vw;
 
+}
+
+.Buy{
+    background-color: red;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* _______________________ detter er for å dele opp koden inn i deler */
@@ -432,6 +442,8 @@ button:hover {
 
 
 /* Respponivt */
+
+
 @media screen and (max-width: 600px) {
 
     .Header{
@@ -465,6 +477,8 @@ button:hover {
     .body{
         width: 100%;
         position: absolute;
+        overflow-x: hidden;
+        max-width: 100%;
     }
 
     .itemList{
@@ -480,8 +494,50 @@ button:hover {
         gap: 5vh;
         margin-right: 1vh;
     }
+  /* Shopig cart */
 
+    .product-wrapper{
+        width: 100%;
+        font-size: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-navn{
+        width: 18vw;
+    }
+
+    .product-price{
+        padding-left: 2vw;
+        width: 55px;
+    }
+
+    .product-amount{
+        padding-left: 4vw;
+    }
  
+    .product-knapp{
+        padding-left: 3vw;
+    }
+    
+    .product-knapp button {
+        color: #000;
+    }
+
+    #Handlekurv{
+        height: 27px;
+
+    }
+    
+    #Handlekurven button{
+        width: 20vw;
+        border-radius: 5vw;
+        border-style: none;
+        height: 4vh;
+        font-size: 65%;
+        padding-bottom: 2.8vh;
+    }
+
 }
 
 /* licens  /* 
