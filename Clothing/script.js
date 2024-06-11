@@ -34,7 +34,6 @@ if (window.location.pathname.includes('index.html')) {
     const cartIcon = document.getElementById('cart');
     const cartD = document.getElementById('cartD')
     const MainShop = document.getElementById('MainShopID')
-    const SearchBar = document.getElementById('')
 
     if (navbar && logo && cartIcon) {
         navbar.classList.add('Transparent');
@@ -44,7 +43,7 @@ if (window.location.pathname.includes('index.html')) {
         MainShop.src = 'bilder/MainShoppingIconSvart.svg'
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 75) {
+            if (window.scrollY > 1000) {
                 navbar.classList.remove('Transparent');
                 logo.src = 'bilder/clKomplitoLogo.svg';
                 cartIcon.src = 'bilder/ShoppingBagNoFill.svg';
@@ -88,7 +87,7 @@ function addItem(itemId) {
     if (itemInCart) {
         itemInCart.amount++;
     } else {
-        handlekruv.push({...produkt, amount: 1}); // add item to cart with amount 1
+        handlekruv.push({...produkt, amount:     1}); // add item to cart with amount 1
     }
     saveData();
     console.log("du la til no i kurven lessgoo")
@@ -121,7 +120,7 @@ function updateCart() {
     let total = 0;
     for (let item of handlekruv) {
         total += item.PRICE * item.amount;
-        document.getElementById("handle").innerHTML += `<div class="product"> ${item.name} ${item.PRICE}kr x ${item.amount} <button onclick="removeItem('${item.id}')">x</button></div>`;
+        document.getElementById("handle").innerHTML += `<div class="product"> ${item.name} $THTTTHTHTHTitem.PRICE}kr x ${item.amount} <button onclick="removeItem('${item.id}')">x</button></div>`;
     }
     document.getElementById("handle").innerHTML += ` <div class="product"> Total: ${total}kr </div>`;
 }
@@ -154,4 +153,7 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+
+
 
