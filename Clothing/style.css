@@ -517,7 +517,13 @@ a{
     .Header {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
+        
+    }
+
+
+    .rightNav{
+      margin-left: 50vw;
     }
 
     .LeftNav{
@@ -526,19 +532,7 @@ a{
         align-items: center;
     }
 
-    .LeftNav img {
-        width: 50%;
-        margin: 1vh 0;
-    }
 
-    .middleNav {
-        margin-top: 2vh;
-        margin-right: 5vh;
-    }
-
-    .middleNav input {
-        width: 80%;
-    }
 
     .rightNav {
         margin-top: 2vh;
@@ -571,6 +565,10 @@ a{
     .miniTitle{
         height: 6vh;
         font-size: 3vh;
+    }
+
+    .middleNav{
+        display: none;
     }
 }
 
