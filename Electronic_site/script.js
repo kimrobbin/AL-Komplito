@@ -93,3 +93,4 @@ function tomKurv() {
     history.go();
 }
 
+
