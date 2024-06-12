@@ -609,3 +609,16 @@ a{
         word-wrap: break-word; 
     }
 }
+
+
+@media (max-width: 480px) {
+
+    .AboutUsContentBox{
+        width: 200px;
+    }    
+
+    .AboutUsContent{
+        margin-top: 500px;
+    }
+
+}
