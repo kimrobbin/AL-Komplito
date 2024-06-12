@@ -72,16 +72,64 @@ body {
     overflow-x: hidden;
 }
 
-.p {
-    font-family: Century Gothic;
+
+
+.footer {
+    display: flex;
+    background-color: #57747F;
+    height: 20vh;
+    margin-top: 5vh;
+    gap: 1vh;
+   
 }
 
-.footer{
-    background-color: #90A3A9;
+.footer-line {
+    width: 2px;
+    height: 70%;
+    background-color: white;
+    margin-left: 1vh;
+}
+
+.footer img {
+    width: 15vh;
+}
+
+.footer-content {
     display: flex;
-    height: 20vh;
-    width: 100%;
-    margin-top: 10vh;
+    height: 100%;
+    align-items: center;
+}
+
+.footer-about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vh;
+    color: white;
+}
+
+.footer-corner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.footer-personvern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vh;
+    color: white;
+
+}
+
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
 }
 
 .footerShoping {
@@ -116,8 +164,7 @@ body {
 /* _______________________  produkter  */
 
 
-#Anbefalinger_av_oss,
-h2 {
+#Anbefalinger_av_oss  {
     display: flex;
     justify-content: center;
     padding: 5vh;
