@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,8 +18,6 @@
         <div class="middleNav">
         </div>
         <div class="rightNav">
-            <a href="MainShopping.html" class="MainShop"> <img id="MainShopID" src="bilder/MainShoppingIconSvart.svg"
-                    alt=""></a>
             <div id="cartD" class="rightNavCart">
                 <a href="cart.html"><img id="cart" src="bilder/ShoppingBagNoFill.svg" alt="Cart Checkout"></a>
             </div>
@@ -40,16 +38,28 @@
 
 
     </div>
+    <div class="indexMainContainer">
+    <div class="indexTextContainer">
+        <h1>
+            Cl-Komplito: Et Motemerke Under Al-Komplito</h1>
+        <div class="indexLine"></div>
+        <div class="indexText">  
+            <p>Cl-Komplito er et fremstående motemerke under paraplyen 
+                til det anerkjente Al-Komplito-konsernet, 
+                som har en mangfoldig portefølje av avdelinger innen ulike bransjer. 
+                Som en nøkkelspiller i Al-Komplito-familien, 
+                spesialiserer Cl-Komplito seg på å tilby et bredt utvalg av stilige 
+                og høykvalitets klær for menn, kvinner og barn.</p>
+        </div>
+    </div>
 
-
-    <!-- Slider main container -->
     <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"> <img src="bilder/Produkter/SliderImageManTshirt.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="bilder/Produkter/Slider2ManPinkTShirt.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="bilder/Produkter/Slider3Rack.jpg" alt=""></div>
+            <div class="swiper-slide"> <img src="bilder/SliderImageManTshirt.jpg" alt="Model wearing a T-Shirt posing"></div>
+            <div class="swiper-slide"><img src="bilder/Slider2ManPinkTShirt.jpg" alt="Model wearing a pink T-Shirt posing"></div>
+            <div class="swiper-slide"><img src="bilder/Slider3Rack.jpg" alt=""></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -59,17 +69,33 @@
         <div class="swiper-button-next"></div>
     </div>
 
-
+    </div>  
 
 
 
 
     <div class="footer">
-
-
+        <div class="footer-corner">
+            <img src="bilder/clKomplitoLogo.svg" alt="">
+            <div class="footer-line"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-about-us">
+                <h2>About Us</h2>
+                <a id="AboutU" href="../Shared websites/aboutUs.html"> About Al-Komplito</a>
+                <p>Tlf: +47 999 99 999</p>
+                <p>E-Mail: Kontakt@AlKomplito.no</p>
+            </div>
+            <div class="footer-personvern">
+                <h2>Personvern</h2>
+                <a href="../Shared websites/Regler/Personvern.html">Personvern</a>
+                <a href="#">Vilkår for Bruk</a>
+                <a href="#">Innsamling av Informasjonskapsler</a>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js">  </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

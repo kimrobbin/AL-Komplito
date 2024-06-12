@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //shoppingcart og de sakene :) (goood kode)(Jonathan)
-console.log("412kr for 5g hasj")
+
 let handlekruv = localStorage.getItem("handlekurv") ? JSON.parse(localStorage.getItem('handlekurv')) : [];
 
 const produker = [
@@ -92,4 +92,5 @@ function tomKurv() {
     localStorage.removeItem('handlekurv');
     history.go();
 }
+
 
