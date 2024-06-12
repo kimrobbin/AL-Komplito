@@ -61,18 +61,18 @@ if (window.location.pathname.includes('index.html')) {
 
 
 
-
+//Jonathan suger vvv
 
 let handlekruv = localStorage.getItem("handlekurv") ? JSON.parse(localStorage.getItem('handlekurv')) : [];
 
 const produker = [
-    { "id": "1", "name": "GeForce 256", "PRICE": 18000, "amount": 0 },
-    { "id": "2", "name": "Switch DS", "PRICE": 3000, "amount": 0 },
-    { "id": "3", "name": "CIBERTRONK", "PRICE": 999999, "amount": 0 },
-    { "id": "4", "name": "Angelic9000", "PRICE": 12000, "amount": 0 },
-    { "id": "5", "name": "ProLys", "PRICE": 1200, "amount": 0 },
-    { "id": "6", "name": "SeeVr", "PRICE": 5348, "amount": 0 },
-    { "id": "7", "name": "GaminPc", "PRICE": 25000, "amount": 0 }
+    { "id": "1", "name": "Black Komplito Sweatpants", "PRICE": 599, "amount": 0 },
+    { "id": "2", "name": "Blue Komplito Sweatpants", "PRICE": 599, "amount": 0 },
+    { "id": "3", "name": "Black Komplito T-Shirt", "PRICE": 399, "amount": 0 },
+    { "id": "4", "name": "Black Komplito Hoodie", "PRICE": 899, "amount": 0 },
+    { "id": "5", "name": "Azure Komplito T-Shirt", "PRICE": 1200, "amount": 0 },
+    { "id": "6", "name": "White Komplito T-Shirt", "PRICE": 5348, "amount": 0 },
+    { "id": "7", "name": "NaN", "PRICE": 0, "amount": 0 }
 ];
 
 function addItem(itemId) {
@@ -114,17 +114,17 @@ function updateCart() {
     let total = 0;
     for (let item of handlekruv) {
         total += item.PRICE * item.amount;
-        document.getElementById("handle").innerHTML += `<div class="product-wrapper">
-        <div class="product-navn"> ${item.name}</div>
-
-        <div class="product-price"> ${item.PRICE} kr</div>
-
-        <div class="product-amount"> ${item.amount}x</div>
-        
-        <div class="product-knapp">
-        <button onclick="removeItem('${item.id}')">x</button></div></div>`;
+        document.getElementById("handle").innerHTML += `
+            <div class="product-wrapper">
+                <div class="product-navn">${item.name}</div>
+                <div class="product-price">${item.PRICE} kr</div>
+                <div class="product-amount">${item.amount}x</div>
+                <div class="product-knapp">
+                    <button onclick="removeItem('${item.id}')">x</button>
+                </div>
+            </div>`;
     }
-    document.getElementById("handle").innerHTML += ` <div class="product"> Total: ${total}kr </div>`;
+    document.getElementById("handle").innerHTML += `<div class="product">Total: ${total} kr</div>`;
 }
 
 function saveData() {
